@@ -6,13 +6,19 @@ fi
 
 chmod 777 $FolderPath;
 
-
-echo "Screenshot is being captured"
-adb shell screencap /sdcard/screenshot.png
+adb devices|tail -n +2|cut -f -1|sed '$d'|
+while read line 
+do 
+modno=$(adb -s $line shell getprop ro.product.model)
+	echo "Capturing screenshot from ${modno}"
+	
+	adb -s $line shell screencap /sdcard/screenshot.png
 timeStamp=$(date '+%Y_%m_%d_%H_%M_%S');
-fileName="Screenshot"_"${timeStamp}.png";
+#modelno= adb devices|tail -n +2|cut -f -1|sed '$d'|while read line; do adb -s $line shell getprop ro.product.model; done
+fileName="${timeStamp}_${modno}.png";
  
  echo "$fileName"
 
-adb pull /sdcard/screenshot.png $FolderPath'/'$fileName
-adb shell rm /sdcard/screenshot.png
+adb -s $line pull /sdcard/screenshot.png $FolderPath'/'$fileName
+adb -s $line shell rm /sdcard/screenshot.png
+done

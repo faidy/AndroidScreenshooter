@@ -10,7 +10,7 @@ Steps:
 2- Open AndroidScreenshooter.ps1 using notepad and change the entered path 'C:\AndroidScreenshots\' in the $FolderPath to the path you want to save the screenshots then save the file
 3- Open AndroidScreenshooter.bat
 
-Now each time you open AndroidScreenshooter.bat a screenshot of the current state is taken on your device and saved to the specified path on your machine.
+Now each time you execute AndroidScreenshooter.bat a screenshot of the current state is taken on your device and saved to the specified path on your machine.
 
 Created by:
 Ahmed Faidy and Wael Refaat
