@@ -2,7 +2,7 @@ AndroidScreenshooter
 ====================
 
 A ps and bash scripts to make taking screenshots from an android device and transferring it to your machine easier.
-It takes the screenshot, copies it to the machine adding a timestamp to it and removes the screenshot from the android device afterwards.
+It takes a screenshot, copies it to the machine adding a timestamp to it and removes the screenshot from the android device afterwards.
 
 for OSX:
 ========
