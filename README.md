@@ -6,11 +6,13 @@ It takes a screenshot, copies it to the machine adding a timestamp to it and rem
 
 for OSX:
 ========
+#### Recent Changes:
+* Added the capability of taking screenshots from more than one device connected to the mac, the screenshot name will be in the following format TimeStamp_DeviceModelNumber to distinguish from screenshots taken from different devices.
+
 #### Prerequisites:
 1. Android SDK is installed with platform-tools directory added to the path
-2. One android device is connected to your computer or one emultator is opened
-3. Debugging is enabled on your android device from the developer options.
-4. The connected device trusts the mac.
+2. Debugging is enabled on your android device from the developer options.
+3. The connected device trusts the mac.
 
 #### Steps:
 1. Download the script from the OSX folder
