@@ -30,6 +30,6 @@ for Windows:
 #### Steps:
 1. Unzip the package to the location you want
 2. Open AndroidScreenshooter.ps1 using notepad and change the entered path 'C:\AndroidScreenshots\' in the $FolderPath to the path you want to save the screenshots then save the file
-3. Open AndroidScreenshooter.bat
+3. Execute AndroidScreenshooter.bat
 
 Now each time you execute AndroidScreenshooter.bat a screenshot of the current state is taken on your device and saved to the specified path on your machine, ADB is already bundled and refrenced in the script which makes the script portable and can be executed on environments without Android platform-tools installed.
