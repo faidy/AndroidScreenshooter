@@ -7,7 +7,7 @@ It takes a screenshot, copies it to the machine adding a timestamp to it and rem
 for OSX:
 ========
 #### Recent Changes:
-* Added the capability of taking screenshots from more than one device connected to the mac, the screenshot name will be in the following format TimeStamp_DeviceModelNumber to distinguish from screenshots taken from different devices.
+* Added the capability of taking screenshots from more than one device connected to the mac, the screenshot name will be in the following format TimeStamp_DeviceModelNumber.png to distinguish from screenshots taken from different devices.
 
 #### Prerequisites:
 1. Android SDK is installed with platform-tools directory added to the path
