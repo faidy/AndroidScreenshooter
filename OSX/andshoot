@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+FolderPath="$HOME/Documents/AndroidScreenshots"
+if [ ! -d "$FolderPath" ]; then
+mkdir $FolderPath;
+fi
+
+chmod 777 $FolderPath;
+
+
+echo "Screenshot is being captured"
+adb shell screencap /sdcard/screenshot.png
+timeStamp=$(date '+%Y_%m_%d_%H_%M_%S');
+fileName="Screenshot"_"${timeStamp}.png";
+ 
+ echo "$fileName"
+
+adb pull /sdcard/screenshot.png $FolderPath'/'$fileName
+adb shell rm /sdcard/screenshot.png
