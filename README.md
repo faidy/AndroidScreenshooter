@@ -10,6 +10,7 @@ for OSX:
 2. One android device is connected to your computer or one emultator is opened
 3. Debugging is enabled on your android device from the developer options.
 4. The connected device trusts the mac.
+
 #### Steps:
 1. Download the script from the OSX folder
 2. Execute the following from the same path of the script
